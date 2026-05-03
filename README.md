@@ -1,4 +1,4 @@
-<img width="5723" height="2564" alt="framework_final" src="https://github.com/user-attachments/assets/9387f68e-d25b-40ef-8b79-2e799fd9d298" /># Rhythm-Aware Dysarthric Wake-Up Word Spotting (RAWS)
+# Rhythm-Aware Dysarthric Wake-Up Word Spotting (RAWS)
 
 This repository contains the official implementation of our Rhythm-Aware Dysarthric Wake-up Word Spotting (RAWS) system.
 
@@ -15,8 +15,7 @@ This repository contains the official implementation of our Rhythm-Aware Dysarth
 
 ## 1. Overview
 
-<!-- TODO: Insert the overall architecture figure (e.g., Fig. 3 in the paper) here -->
-
+<img width="5723" height="2564" alt="framework_final" src="https://github.com/user-attachments/assets/9387f68e-d25b-40ef-8b79-2e799fd9d298" />
 
 The proposed RAWS framework consists of three main components:
 - **Temporal Prosody Structure Encoder (TPSE)** for rhythm feature modeling
