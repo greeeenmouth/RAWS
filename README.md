@@ -95,25 +95,26 @@ The data lists have already been prepared under `data_control/` and `data_uncont
 
 For models without rhythm supervision, use `data.list`. For models with the auxiliary rhythm-supervision branch, use `data_rhy.list`. Users only need to replace the value of the `wav` field with the actual path to their local audio files.
 
-## Training
-### Pre-train with non-dysarthria data
+## 5. Training
+### 5.1 Pre-train with non-dysarthria data
 ```bash
 cd examples/lrd/s0
 bash run_control.sh --stage 1 --stop_stage 1
 ```
 
-### Train RAWS model with dysarthria data
+### 5.2 Train RAWS model with dysarthria data
 ```bash
 bash run_uncontrol.sh --stage 1 --stop_stage 1
 ```
 
-## Evaluation
+## 6. Evaluation
+### 6.1 Evaluate with trained model
 To evaluate a trained model, run:
 
 ```bash
 bash run_uncontrol.sh --stage 2 --stop_stage 2
 ```
-
+### 6.2 Evaluate with our best-performing model
 Alternatively, you can directly evaluate the best model reported in our paper using `run_test.sh`. The pretrained checkpoint is provided at:
 
 ```text
@@ -123,7 +124,7 @@ best_model/avg_30.pt
 Run the following command:
 
 ```bash
-bash run_test.sh
+bash run_uncontrol.sh --stage 2 --stop_stage 2 --checkpoint best_model/avg_30.pt
 ```
 
 
